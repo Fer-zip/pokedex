@@ -117,6 +117,11 @@ header {
     .datos p {
         margin: 5px 0;
     }
+
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Pantallas medianas (tabletas) */
