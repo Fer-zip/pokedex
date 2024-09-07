@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/pokedex_icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <div class="buscador">
+            <div class="navegacion">
+                <ul class="lista_regiones" id="lista_regiones">
+                    <li class="barra" id="barra">
+                        <div class="linea"></div>
+                        <div class="linea"></div>
+                        <div class="linea"></div>
+                    </li>
+                    <ul>
+                        <li class="regiones" id="regiones">Kanto</li>
+                        <li class="regiones" id="regiones">Johto</li>
+                        <li class="regiones" id="regiones">Hoenn</li>
+                        <li class="regiones" id="regiones">Sinnoh</li>
+                        <li class="regiones" id="regiones">Teselia</li>
+                        <li class="regiones" id="regiones">Kalos</li>
+                    </ul>
+                </ul>
+                <a href="/"><img src="img/logo.webp" alt="logo_pokedex" class="logo"></a>
+                <form action="" method="post" id="form_buscador" onsubmit="return false;">
+                    <input type="text" id="buscador">
+                    <button type="submit" id="submit">🔎</button>
+                </form>
+                <!-- <div class="modoOscuro">
+                    <input type="checkbox" class="checkbox" id="cajaModo">
+                </div> -->
+            </div>
+            <ul class="tipos">
+                <li class="normal" id="typePoke">normal</li>
+                <li class="water" id="typePoke">water</li>
+                <li class="fire" id="typePoke">fire</li>
+                <li class="grass" id="typePoke">grass</li>
+                <li class="electric" id="typePoke">electric</li>
+                <li class="ice" id="typePoke">ice</li>
+                <li class="fight" id="typePoke">fight</li>
+                <li class="poison" id="typePoke">poison</li>
+                <li class="ground" id="typePoke">ground</li>
+                <li class="flying" id="typePoke">flying</li>
+                <li class="psychic" id="typePoke">psychic</li>
+                <li class="bug" id="typePoke">bug</li>
+                <li class="rock" id="typePoke">rock</li>
+                <li class="ghost" id="typePoke">ghost</li>
+                <li class="dark" id="typePoke">dark</li>
+                <li class="steel" id="typePoke">steel</li>
+                <li class="dragon" id="typePoke">dragon</li>
+                <li class="fairy" id="typePoke">fairy</li>
+            </ul>
+        </div>
+    </header>
+    <div class="listaPokemon" id="listaPokemon">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* Reseteo básico */
+* {
+    background-color: black;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    text-transform: uppercase;
+}
+
+/* Logo */
+.logo {
+    height: 100px;
+}
+
+/* Buscador */
+.buscador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+
+.buscador form {
+    display: flex;
+    /* width: 100%; */
+    /* max-width: 400px; */
+    justify-content: center;
+    margin: 3px 0;
+}
+
+/* Contenedor de la lista de Pokémon */
+.listaPokemon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 10px;
+}
+
+/* Estilo para cada Pokémon */
+.pokemon {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: solid 1pt rgb(196, 35, 110);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pokemon img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Estilos para los datos de cada Pokémon */
+.datos {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+/* Estilo de texto */
+.datos p {
+    margin: 0;
+}
+
+/* Estilo para el encabezado */
+header {
+    margin: 10px 10px;
+    text-align: center;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 600px) {
+    .logo {
+        height: 80px;
+    }
+
+    .buscador {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buscador form {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .listaPokemon {
+        margin: 0;
+    }
+
+    .pokemon {
+        width: 90%;
+        max-width: 350px;
+        margin: 10px auto;
+    }
+
+    .datos {
+        flex-direction: unset;
+        align-items: center;
+        text-align: center;
+    }
+
+    .datos p {
+        margin: 5px 0;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .pokemon {
+        width: 45%;
+        max-width: none;
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 993px) {
+    .pokemon {
+        width: 30%;
+    }
+}
+
+/* Lista de tipos */
+.tipos {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 5px 0;
+    width: 100%;
+}
+
+/* Estilo para cada tipo de Pokémon */
+.tipos li {
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Colores y estilos para cada tipo de Pokémon */
+.normal { background-color: aliceblue; color: black; padding: 0 3px; border-radius: 4px;}
+.water { background-color: rgb(38, 145, 238); color: white; padding: 0 3px; border-radius: 4px;}
+.fire { background-color: rgb(240, 118, 3); color: black; padding: 0 3px; border-radius: 4px;}
+.grass { background-color: rgb(8, 226, 55); color: black; padding: 0 3px; border-radius: 4px;}
+.electric { background-color: rgb(247, 231, 7); color: black; padding: 0 3px; border-radius: 4px;}
+.ice { background-color: rgb(53, 222, 228); color: black; padding: 0 3px; border-radius: 4px;}
+.fight { background-color: rgb(226, 33, 8); color: white; padding: 0 3px; border-radius: 4px;}
+.poison { background-color: rgb(121, 8, 226); color: white; padding: 0 3px; border-radius: 4px;}
+.ground { background-color: rgb(221, 182, 8); color: black; padding: 0 3px; border-radius: 4px;}
+.flying { background-color: rgb(64, 141, 241); color: white; padding: 0 3px; border-radius: 4px;}
+.psychic { background-color: rgb(199, 6, 199); color: white; padding: 0 3px; border-radius: 4px;}
+.bug { background-color: rgb(98, 173, 47); color: white; padding: 0 3px; border-radius: 4px;}
+.rock { background-color: rgb(172, 116, 14); color: white; padding: 0 3px; border-radius: 4px;}
+.ghost { background-color: rgb(127, 64, 163); color: white; padding: 0 3px; border-radius: 4px;}
+.dark { background-color: rgb(41, 25, 3); color: white; padding: 0 3px; border-radius: 4px;}
+.steel { background-color: rgb(141, 136, 182); color: white; padding: 0 3px; border-radius: 4px;}
+.dragon { background-color: rgb(30, 8, 226); color: white; padding: 0 3px; border-radius: 4px;}
+.fairy { background-color: rgb(196, 10, 202); color: white; padding: 0 3px; border-radius: 4px;}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 600px) {
+    .tipos li {
+        width: 25%;
+    }
+    .regiones {
+        display: none;
+    }
+    .barra {
+        display: block;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .tipos li {
+        width: 20%;
+    }
+    .regiones {
+        display: none;
+    }
+    .barra {
+        display: block;
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 993px) {
+    .tipos li {
+        width: 10%;
+    }
+    .regiones {
+        display: block;
+    }
+    .barra {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra deslizadora */
+}
+
+::-webkit-scrollbar-track {
+    background: #333; /* Color de fondo del track */
+}
+
+/* Estilo del thumb de la barra deslizadora (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(196, 35, 110); /* Color del thumb */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Cambiar el color del thumb al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color más oscuro al pasar el mouse */
+}
+
+.lista_regiones{
+    list-style: none;
+    display: flex;
+    position: relative;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.lista_regiones ul{
+    position: absolute;
+    top:100%;
+    z-index: 10;
+    align-items: center;
+}
+
+.regiones{
+    width: 100%;
+    padding: 2px 4px;
+    position: relative;
+    align-items: center;
+    font-size: 20px;
+    display: none;
+}
+
+.regiones:hover{
+    background-color: rgb(196, 35, 110);
+}
+
+.navegacion {
+    margin: 0 0 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centramos los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.linea{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    margin: 3px 0 0 0;
+}
+
+.barra{
+    display: block;
+    position: relative;
+}
